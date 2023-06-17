@@ -1,1 +1,78 @@
+/* style.css */
 
+/* style.css */
+
+/* Grid styles */
+#moviesDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+    grid-gap: 10px;
+    /* margin: 10px; */
+  }
+  body{
+    background-color: #333;
+  }
+  /* Flexbox styles */
+  #moviesDiv > .movie-card {
+    
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    border: 2px solid #333;
+    transition: transform 0.3s; 
+    margin: 5px;
+  }
+
+  /* Apply hover effect */
+  #moviesDiv > .movie-card:hover {
+    transform: translateY(-8px); /* Move the card up by 5 pixels */
+  }
+  
+  /* Image styles */
+  #moviesDiv .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* Other styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #333;
+    color: aliceblue;
+  }
+  
+  #submitBtn,
+  #clearBtn {
+    padding: 5px 10px;
+    background-color: #333;
+    color: aliceblue;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #loadMoreBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
+  
+  .fa-window-close {
+    color: white; /* Change the color to red */
+    font-size: 30px; /* Adjust the font size */
+    /* Add any other desired styles */
+  }
+  h2{
+    font-size: 18px;
+  }
